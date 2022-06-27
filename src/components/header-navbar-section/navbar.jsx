@@ -46,8 +46,7 @@ export default function NavBar() {
           <div className="logo">
             <img src={logo} alt="" />
           </div>
-          {/* <img className="logo1" src={logo} />
-            <a href="#">HOUZ<span>ESY</span></a></div> */}
+         
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
           <ul className="nav-links mx-auto">
@@ -155,7 +154,7 @@ export default function NavBar() {
               <a href="#">BLOGS</a>
             </li>
             <li id="horizontal-line">|</li>
-            <li>
+            <li id="popupBtnLi">
               <a href="#" className=" navbar-sign-in-btn"  
               onClick={() => {
                  handleSignIn();
@@ -165,8 +164,7 @@ export default function NavBar() {
                 Sign in
               </a>
             </li>
-            <li>
-            {/* <button className="navbar-sign-up-btn" onClick={handleClick}>Sign UP </button> */}
+            <li id="popupBtnLi">
               <a href="#" className="navbar-sign-up-btn"
               onClick={() => {
                 handleSignUp();

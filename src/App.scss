@@ -1,401 +1,311 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
-p,h1,h2,h3,h4,h5,h6{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Inter", sans-serif;
 }
 
-#navbar{
+#navbar {
   margin-bottom: 20px;
 }
 
-#main-page{
+#main-page {
   margin: 50px 0px;
 }
-.submit-project-div{
+.submit-project-div {
   margin: 0px 0px 20px;
 }
-.mini-carousel-heading{
-  width:100%;
-
+.mini-carousel-heading {
+  width: 100%;
 }
-.mini-carousel-heading h2{
+.mini-carousel-heading h2 {
   letter-spacing: 2px;
   color: rgba(0, 0, 0, 0.6);
   width: 80%;
   margin-left: 130px;
   font-size: 40px;
-
 }
 
-.dark-card-heading h1{
+.dark-card-heading h1 {
   color: rgba(102, 102, 102, 1);
   letter-spacing: 2px;
   font-size: 3.5rem;
 }
-.dark-card-heading h3{
+.dark-card-heading h3 {
   color: rgba(0, 0, 0, 0.7);
   font-size: 15px;
   font-weight: lighter;
   letter-spacing: 2px;
 }
-.dark-card-footer{
+.dark-card-footer {
   margin: 50px auto 100px;
-
 }
-.dark-card-footer h3{
+.dark-card-footer h3 {
   letter-spacing: 2px;
   font-size: 15px;
-
 }
-.cardHeading, .dark-card-heading, .dark-card-footer{
+.cardHeading,
+.dark-card-heading,
+.dark-card-footer {
   text-align: center;
-
 }
-.cardHeading  h1{
+.cardHeading h1 {
   color: rgba(130, 130, 130, 1);
 
   letter-spacing: 2px;
   font-size: 40px;
-
 }
-.cardHeading  h3{
+.cardHeading h3 {
   color: rgba(141, 141, 141, 1);
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 2px;
-  
-
 }
 
-.cardMainContainer{
-  margin:                   80px auto 50px;
-  display:                  grid;
-  height:                   580px;
-  width:                    80%;
-  padding:                  5vh 0vh 5vh 6vh;
+.cardMainContainer {
+  margin: 80px auto 50px;
+  display: grid;
+  height: 580px;
+  width: 80%;
+  padding: 5vh 0vh 5vh 6vh;
   // background-color: yellow;
-  grid-template-columns:    repeat(4, 1fr);
-  overflow:                 hidden;
-  grid-column-gap:                      2vh;
-  grid-row-gap:                         10vh;
-  justify-content:          center;
-
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  grid-column-gap: 2vh;
+  grid-row-gap: 10vh;
+  justify-content: center;
 }
 
-.seeAllButtonDiv{
+.seeAllButtonDiv {
   margin-top: -30px;
   margin-bottom: 150px;
   width: 100%;
   padding-left: 90%;
 }
-#card-gallery-see-all-btn{
+#card-gallery-see-all-btn {
   margin: 0 0 0 0px;
-  background:               none;
-  border:                   none;
+  background: none;
+  border: none;
 }
 #card-gallery-see-all-btn span {
-  font-size:                larger;
-  font-weight:  	          600;
-  color:                  blue;
-  &:hover{
+  font-size: larger;
+  font-weight: 600;
+  color: blue;
+  &:hover {
     cursor: pointer;
-    color: #3B557F
-    ;
+    color: #3b557f;
   }
-
 }
-.bottom-slider-div-container{
+.bottom-slider-div-container {
   margin: 50px 0px;
   box-sizing: border-box;
 }
 
-
 //---------------------------------------------------------max-width: 1200px-----------------
-  @media only screen and (max-width: 1200px) {
-    
-    .mini-carousel-heading h2{
-      margin-left: 90px;
-      font-size: 40px;
-    
-    }
-    .cardMainContainer{
-      margin-bottom:            50px;
-      height:                   600px;
-      grid-template-columns:    repeat(4, 1fr);
-      padding:                  5vh;
-      gap:             10vh;
-      
-    
-    }
-    
-    
+@media only screen and (max-width: 1200px) {
+  .mini-carousel-heading h2 {
+    margin-left: 90px;
+    font-size: 40px;
+  }
+  .cardMainContainer {
+    margin-bottom: 50px;
+    height: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5vh;
+    gap: 10vh;
   }
 
+  .seeAllButtonDiv {
+    margin-bottom: 100px;
+    width: 100%;
+    padding-left: 83.5%;
+  }
+  #card-gallery-see-all-btn span {
+    font-size: larger;
+    font-weight: 600;
+  }
+}
 
 //-----------------------------------------------------max-width: 850px----------------------
 @media only screen and (max-width: 850px) {
-
-  .mini-carousel-heading h2{
+  .mini-carousel-heading h2 {
     letter-spacing: 2px;
     width: 80%;
     margin-left: 60px;
     font-size: 25px;
-  
   }
-  
-  .dark-card-heading h1{
+
+  .dark-card-heading h1 {
     letter-spacing: 2px;
     font-size: 25px;
-  
   }
-  .dark-card-heading h3{
+  .dark-card-heading h3 {
     font-size: 10px;
     font-weight: lighter;
     letter-spacing: 2px;
   }
-  .dark-card-footer{
+  .dark-card-footer {
     margin: 50px auto 100px;
-  
   }
-  .dark-card-footer h3{
+  .dark-card-footer h3 {
     letter-spacing: 2px;
     font-size: 10px;
-  
   }
-  
-  .cardHeading  h1{
+
+  .cardHeading h1 {
     letter-spacing: 2px;
     font-size: 25px;
-  
   }
-  .cardHeading  h3{
+  .cardHeading h3 {
     font-size: 10px;
     font-weight: lighter;
     letter-spacing: 2px;
-    
-  
   }
-  
-  .cardMainContainer{
-    margin-bottom:            50px;
-    height:                   440px;
-    grid-template-columns:    repeat(4, 1fr);
-    overflow:                 hidden;
-    padding:                  5vh;
-    gap:                      5vh;
-  
+
+  .cardMainContainer {
+    margin-bottom: 50px;
+    height: 540px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5vh 0vh 5vh 11vh;
+    gap: 5vh;
   }
-  .btnReadMore{
-    color:                  black;
-    background:               none;
-    border:                   none;
-    float:                    right;
-    margin-top:               -60px;
-    margin-right:             30px;
-  
+  .btnReadMore {
+    margin-top: -60px;
+    margin-right: 30px;
   }
-  .seeAllButtonDiv{
-    width: 100%;
-    text-align: right;
-  }
-  #card-gallery-see-all-btn{
-    margin: 0 20px 0 0;
-    background:               none;
-    border:                   none;
+  .seeAllButtonDiv {
+    padding-left: 81%;
   }
   #card-gallery-see-all-btn span {
-    color:                  black;
-    font-size:                1rem;
-    &:hover{
-      cursor: pointer;
-      color: blue;
-    }
-  
+    font-size: larger;
+    font-weight: 600;
   }
-  .bottom-slider-div-container{
-   grid-template-columns: repeat(12, 1fr);
-    //background-color: yellow;
-   
+  .bottom-slider-div-container {
+    grid-template-columns: repeat(12, 1fr);
   }
- 
 }
-
 
 //-----------------------------------------------------max-width: 650px----------------------
 @media only screen and (max-width: 650px) {
- 
-  .mini-carousel-heading h2{
+  .mini-carousel-heading h2 {
     letter-spacing: 2px;
     width: 80%;
     margin-left: 40px;
     font-size: 20px;
-  
   }
-  
-  .dark-card-heading h1{
+
+  .dark-card-heading h1 {
     letter-spacing: 2px;
     font-size: 20px;
-  
   }
-  .dark-card-heading h3{
+  .dark-card-heading h3 {
     font-size: 8px;
     font-weight: lighter;
     letter-spacing: 2px;
   }
-  .dark-card-footer{
+  .dark-card-footer {
     margin: 40px auto 100px;
-  
   }
-  .dark-card-footer h3{
+  .dark-card-footer h3 {
     letter-spacing: 2px;
     font-size: 8px;
-  
   }
-  
-  .cardHeading  h1{
+
+  .cardHeading h1 {
     letter-spacing: 2px;
     font-size: 20px;
-  
   }
-  .cardHeading  h3{
+  .cardHeading h3 {
     font-size: 8px;
     font-weight: lighter;
     letter-spacing: 1px;
-    
-  
   }
-  
-  .cardMainContainer{
-    margin-bottom:            40px;
-    height:                   440px !important;
-    grid-template-columns:    repeat(3, 1fr);
-    overflow:                 hidden;
-    padding:                  5vh;
-    gap:                      5vh;
-  
+
+  .cardMainContainer {
+    margin-bottom: 40px;
+    height: 1060px;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+    padding: 5vh 0vh 5vh 25vh;
+    gap: 5vh;
   }
-  .btnReadMore{
-    color:                  black;
-    background:               none;
-    border:                   none;
-    float:                    right;
-    margin-top:               -60px;
-    margin-right:             30px;
-  
+  .btnReadMore {
+    color: black;
+    background: none;
+    border: none;
+    float: right;
+    margin-top: -60px;
+    margin-right: 30px;
   }
-  .seeAllButtonDiv{
-    width: 100%;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    text-align: right;
-  }
-  #card-gallery-see-all-btn{
-    margin: 0 20px 0 0;
-    
-    background:               none;
-    border:                   none;
+  .seeAllButtonDiv {
+    padding-left: 78.2%;
   }
   #card-gallery-see-all-btn span {
-    color:                  black;
-    font-size:                0.8rem;
-    &:hover{
-      cursor: pointer;
-      color: blue;
-    }
-  
+    font-size: larger;
+    font-weight: 600;
   }
-  .bottom-slider-div-container{
-   grid-template-columns: repeat(12, 1fr);
-    //background-color: yellow;
-   
+  .bottom-slider-div-container {
+    grid-template-columns: repeat(12, 1fr);
   }
-  
 }
 
 //------------------------------------------------max-width: 380px--------------------------
 @media only screen and (max-width: 380px) {
-  .mini-carousel-heading h2{
+  .mini-carousel-heading h2 {
     letter-spacing: 2px;
     width: 80%;
     margin-left: 40px;
     font-size: 20px;
-  
   }
-  
-  .dark-card-heading h1{
+
+  .dark-card-heading h1 {
     letter-spacing: 2px;
     font-size: 20px;
-  
   }
-  .dark-card-heading h3{
+  .dark-card-heading h3 {
     font-size: 8px;
     font-weight: lighter;
     letter-spacing: 2px;
   }
-  .dark-card-footer{
+  .dark-card-footer {
     margin: 40px auto 100px;
-  
   }
-  .dark-card-footer h3{
+  .dark-card-footer h3 {
     letter-spacing: 2px;
     font-size: 8px;
-  
   }
-  
-  .cardHeading  h1{
+
+  .cardHeading h1 {
     letter-spacing: 2px;
     font-size: 20px;
-  
   }
-  .cardHeading  h3{
+  .cardHeading h3 {
     font-size: 8px;
     font-weight: lighter;
     letter-spacing: 1px;
-    
   }
-  
-  .cardMainContainer{
-    margin-bottom:            40px;
-    height:                   700px ;
-    grid-template-columns:    repeat(2, 1fr);
-    overflow:                 hidden;
-    padding:                  5vh;
-    gap:                      5vh;
-  
+
+  .cardMainContainer {
+    margin-bottom: 40px;
+    height: 1060px;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+    padding: 5vh 0vh 5vh 8vh;
+    gap: 5vh;
   }
-  .btnReadMore{
-    color:                  black;
-    background:               none;
-    border:                   none;
-    float:                    right;
-    margin-top:               -60px;
-    margin-right:             30px;
-  
+  .btnReadMore {
+    margin-top: -60px;
+    margin-right: 30px;
   }
-  .seeAllButtonDiv{
-    width: 100%;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    text-align: right;
+  .seeAllButtonDiv {
+    padding-left: 68.8%;
   }
-  #card-gallery-see-all-btn{
-    margin: 0 20px 0 0;
-    
-    background:               none;
-    border:                   none;
-  }
-  #card-gallery-see-all-btn span {
-    color:                  black;
-    font-size:                0.8rem;
-    &:hover{
-      cursor: pointer;
-      color: blue;
-    }
-  
-  }
-  .bottom-slider-div-container{
-   display: block;
+  .bottom-slider-div-container {
+    display: block;
     background-color: yellow;
-   
   }
-  
 }

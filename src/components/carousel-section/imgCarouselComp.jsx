@@ -1,8 +1,10 @@
 import React from "react";
+import "./carousel.scss";
 
 export default function ImgCarouselComp(props) {
   return (
     <img
+    id="imgComp"
       src={props.src}
       alt="carousel_img"
       style={{
